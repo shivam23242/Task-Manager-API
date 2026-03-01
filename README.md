@@ -27,7 +27,6 @@ task/
 ├── manage.py
 ├── README.md
 ├── API_EXAMPLES.md
-├── TESTING.md
 ├── taskmanager/
 │   ├── settings.py
 │   └── urls.py
@@ -98,6 +97,8 @@ Protected endpoints accept:
 `Authorization: Bearer <ACCESS_TOKEN>`
 2. Custom header (also supported in this project):
 `access-token: <ACCESS_TOKEN>`
+
+Note: use `access-token` (hyphen), not `access_token` (underscore).
 
 ## API Endpoints
 
@@ -264,16 +265,3 @@ python manage.py test users
 python manage.py test tasks
 ```
 
-Run with verbose output:
-
-```bash
-python manage.py test --verbosity=2
-```
-
-If you use the local venv explicitly:
-
-```bash
-./tenv/bin/python manage.py test
-```
-
-See [TESTING.md](/Users/shivammiglani/Documents/task/TESTING.md) for quick troubleshooting notes.
